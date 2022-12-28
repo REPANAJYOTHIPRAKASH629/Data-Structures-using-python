@@ -1,6 +1,7 @@
 # Data-Structures-using-python
 
-Breadth First Search:---
+BREADTH FIRST SEARCH
+
 ![image](https://user-images.githubusercontent.com/98946604/209760567-862b32af-6b8d-45a2-aa3d-f01dc1c5d720.png)
 
 Breadth-First Search (BFS) is an algorithm used for traversing graphs or trees. 
@@ -11,6 +12,7 @@ Breadth-First Search in tree and graph is almost the same.
 The only difference is that the graph may contain cycles, so we may traverse to the same node again.
 
 BFS Algorithm
+
 Before learning the python code for Breadth-First and its output, let us go through the algorithm it follows for the same. 
 We can take the example of Rubik’s Cube for the instance. 
 Rubik’s Cube is seen as searching for a path to convert it from a full mess of colors to a single color. 
@@ -28,7 +30,7 @@ The steps of the algorithm work as follow:
  Keep continuing steps two and three till the queue is empty.
 Many times, a graph may contain two different disconnected parts and therefore to make sure that we have visited every vertex, we can also run the BFS algorithm at every node.
 
-Depth First Search:---
+DEPTH FIRST SEARCH
 
 ![image](https://user-images.githubusercontent.com/98946604/209760720-1a862c3f-7204-4728-bf1d-a59acd045c68.png)
 
@@ -38,6 +40,7 @@ Here, the word backtrack means once you are moving forward and there are not any
 All the nodes are progressing to be visited on the current path until all the unvisited nodes are traversed after which subsequent paths are going to be selected.
 
 DFS Algorithm
+
 Before learning the python code for Depth-First and its output, let us go through the algorithm it follows for the same. The recursive method of the Depth-First Search algorithm is implemented using stack. A standard Depth-First Search implementation puts every vertex of the graph into one in all 2 categories: 1) Visited 2) Not Visited. The only purpose of this algorithm is to visit all the vertex of the graph avoiding cycles.
 
 The DSF algorithm follows as:
@@ -46,6 +49,8 @@ We will start by putting any one of the graph's vertex on top of the stack.
 After that take the top item of the stack and add it to the visited list of the vertex.
 Next, create a list of that adjacent node of the vertex. Add the ones which aren't in the visited list of vertexes to the top of the stack.
 Lastly, keep repeating steps 2 and 3 until the stack is empty.
+
+
 
 DOUBLY LINKED LIST
 
@@ -61,15 +66,13 @@ One abstract data type where we might want to use a doubly-linked list for imple
 
 Return the current element which is the element at the insertion point, in the above case, b.
 
-
-
-
-
 Insert a new element. If the element we are inserting is e then the state from the above after the operation would be [a,b,e^,c,d]. The element is inserted following the insertion point, and this point becomes the new insertion point.
 
 Move the insertion point forward. If we follow from after the previous insert operation, the state becomes [a,b,e,c^,d].
 
-Delete the current element. This deletes the element which is the current insertion point. Following on from the situation above after the forward operation, we get [a,b,e,d^]. Note the insertion point becomes the element which was after the deleted element.
+Delete the current element. This deletes the element which is the current insertion point.
+Following on from the situation above after the forward operation, we get [a,b,e,d^]. 
+Note the insertion point becomes the element which was after the deleted element.
 
 Move the insertion point backwards. Applying this operation next gives us [a,b,e^,d].
 
@@ -88,6 +91,8 @@ Deleting involves more rearrangement of pointers:
 When dealing with inserting or deleting, special account needs to be taken of inserting or deleting at the end of ths list, or inserting into an empty list. 
 When the last element in the list is deleted, the insertion point becomes the new last element since it cannot move forward to the next element.
 
+
+
  LINKED LIST
  
  A linked list is a dynamic data structure, which means that the size of the list can change at run time. You can imagine a linked list as a chain where each link is connected to the next one to form a sequence with a start and an end.
@@ -99,11 +104,14 @@ A pointer to the next node
 There is also a separate pointer that indicates the first element in the list (the head of the list). This has a null value when the list is empty. The next node pointer of the last element in the list always points to a null value to mark the end of the list.
 
 A linked list with four nodes (each containing a number) can be depicted with the following diagram:
+
 ![image](https://user-images.githubusercontent.com/98946604/209761254-302d5b01-d8f5-4215-9ec7-16a58ade4e71.png)
 
  INFIX TO POSTFIX CONVERSTION
  
- Algorithm to convert an Infix expression to a Postfix expression. Check below example.
+ Algorithm to convert an Infix expression to a Postfix expression. 
+ 
+ Check below example.
 
 Step 0. Tokenize the infix expression. i.e Store each element i.e ( operator / operand / parentheses ) of an infix expression into a list / queue.
 
@@ -120,7 +128,10 @@ expression. Push current token onto the stack.
 
 Step 6. If the token is an operand, append it to the postfix expression. (Positions of the operands do not change in the postfix expression so append an operand as it is.)
  
+ 
 INSERTION SORT
+
+
 Insertion sort is the first sort I’m going to cover. 
 There are some simpler sorting algorithms (like bubble sort) but insertion sort is simple to explain.
 You likely use a method similar to insertion sort when you sort things in every day life. Additionally, it performs well enough on small data sets and you don’t have to have all the items up front. 
