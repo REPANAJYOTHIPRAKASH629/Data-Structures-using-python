@@ -129,6 +129,9 @@ Step 5. If the token equals “*” or “/” or “+” or “-” or “^”,
 expression. Push current token onto the stack.
 
 Step 6. If the token is an operand, append it to the postfix expression. (Positions of the operands do not change in the postfix expression so append an operand as it is.)
+
+![image](https://user-images.githubusercontent.com/98946604/209765223-c6ffcbe6-beda-40d8-93a6-e50f644bc89b.png)
+
  
  
 INSERTION SORT
@@ -140,16 +143,29 @@ You likely use a method similar to insertion sort when you sort things in every 
 You can put new items in the correct place as they become available. This makes it an online sorting algorithm.
 
 The setup for insertion sort is simple. 
+
 You have two collections. 
+
 One contains the unsorted items. 
+
 The other contains the items that are sorted. 
+
 If this is confusing, think about ordering a deck of cards. 
+
 The shuffled (unsorted) cards are in the deck and the ones you’ve put in order are spread out on the table. 
+
 Picture of cards laid out on a table
+
 ![image](https://user-images.githubusercontent.com/98946604/209761794-ca29db55-86cf-4ccb-ae16-773f39110412.png)
+
 When you start, the collection of sorted items is empty. 
+
 To sort you look at the first item in the unsorted collection and put it in the proper place in the sorted collection. 
+
 Then you put the next item in place. Repeat until sorted.
+
+![image](https://user-images.githubusercontent.com/98946604/209765055-1735fcfc-3311-4a72-adbb-5d23d0a408c0.png)
+
 
 MERGE SORT 
 merge sort is an efficient algorithm, and one of Divide and Conquer algorithms that splits the giving array into two halves, and then merge them in a sorted manner.
@@ -230,5 +246,7 @@ element is selected from the unsorted array and swapped with the leftmost elemen
 element becomes a part of the sorted array. This process continues moving unsorted array
 
 boundary by one element to the right.
+
+![image](https://user-images.githubusercontent.com/98946604/209764985-96d12eeb-ec18-49e8-a38f-21ba4b3bdabb.png)
 
 
