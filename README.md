@@ -151,4 +151,84 @@ When you start, the collection of sorted items is empty.
 To sort you look at the first item in the unsorted collection and put it in the proper place in the sorted collection. 
 Then you put the next item in place. Repeat until sorted.
 
+MERGE SORT 
+merge sort is an efficient algorithm, and one of Divide and Conquer algorithms that splits the giving array into two halves, and then merge them in a sorted manner.
+
+Approach : 
+
+-> We will be creating 2 functions mergeSort() and merge()
+
+-> In mergeSort(), we will divide the array around the middle element by making the recursive call :
+
+1.mergeSort(arr,l,mid)   2. mergeSort(arr,mid+1,r)    
+
+ where l = leftmost index of array, r = rightmost index of array , mid = middle index of array
+
+-> In merge(),  we will use a temporary array named temp. This will be used to store elements in sorted order from both the arrays which we divided.
+
+->From the temporary array, we will return back the elements in the original array.
+
+-> Now , let   i = leftmost index of array, j = mid+1 index of array , f = leftmost index of array ( this index will be used to store elements in the original array ) 
+
+-> While i<= mid && j <= r , we will store elements from both the parts in temporary array in sorted manner 
+
+-> Finally will transfer all elements from the temporary array to the original array.
+
+-> The red number shows an order of the steps in recursion calls
+
+![image](https://user-images.githubusercontent.com/98946604/209764184-b79121f1-f4b3-44e8-9586-2351863548cf.png)
+
+
+
+QUICK SORT
+
+Quick Sort is one of the most popular and efficient sorting algorithms. It is generally the default sorting algorithms in many programming languages (including C++ and Java).
+
+Even though the worst case time complexity of Quick Sort is O(n^2), it works at O(n log n) in most cases and is generally much faster than merge sort if implemented properly.
+
+Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
+
+Algorithm
+Pick an element, called a pivot, from the array.
+Partitioning: reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.
+Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.
+The base case of the recursion is arrays of size zero or one, which are in order by definition, so they never need to be sorted.
+
+There are multiple variants of quick sort depending on the choice of pivot. Some popular choices of pivots being:
+
+First element of the unsorted array
+
+Last element of the unsorted array
+
+Middle element of the unsorted array
+
+Random element from the unsorted array
+
+The choice of pivot determines the chances of the algorithm hitting the worst case for the given array.
+
+![image](https://user-images.githubusercontent.com/98946604/209764505-b6c264b1-5340-4b87-86ca-d1d300e50c5c.png)
+
+
+SELECETION SORT
+
+Selection sorting is conceptually the simplest sorting algorithm. It is an in-place (i.e. not
+
+needing any auxiliary storage), comparison-based sorting technique.
+
+This algorithm first finds the smallest element in the array and exchanges it with the element
+
+in the first position, then find the second smallest element and exchange it with the element in
+
+the second position, and continues in this way until the entire array is sorted. Basically it means
+
+that the list is divided into two parts, the sorted part at the left end and the unsorted part at the
+
+right end. Initially, the sorted part is empty and the unsorted part is the entire list. The smallest
+
+element is selected from the unsorted array and swapped with the leftmost element, and that
+
+element becomes a part of the sorted array. This process continues moving unsorted array
+
+boundary by one element to the right.
+
 
