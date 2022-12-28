@@ -106,11 +106,18 @@ A linked list with four nodes (each containing a number) can be depicted with th
  Algorithm to convert an Infix expression to a Postfix expression. Check below example.
 
 Step 0. Tokenize the infix expression. i.e Store each element i.e ( operator / operand / parentheses ) of an infix expression into a list / queue.
+
 Step 1. Push “(” onto a stack and append “)” to the tokenized infix expression list / queue.
+
 Step 2. For each element ( operator / operand / parentheses ) of the tokenized infix expression stored in the list/queue repeat steps 3 up to 6.
+
 Step 3. If the token equals “(”, push it onto the top of the stack.
+
 Step 4. If the token equals “)”, pop out all the operators from the stack and append them to the postfix expression till an opening bracket i.e “(” is found.
-Step 5. If the token equals “*” or “/” or “+” or “-” or “^”, pop out operators with higher precedence at the top of the stack and append them to the postfix expression. Push current token onto the stack.
+
+Step 5. If the token equals “*” or “/” or “+” or “-” or “^”, pop out operators with higher precedence at the top of the stack and append them to the postfix
+expression. Push current token onto the stack.
+
 Step 6. If the token is an operand, append it to the postfix expression. (Positions of the operands do not change in the postfix expression so append an operand as it is.)
  
 INSERTION SORT
