@@ -2,7 +2,8 @@
 
 BREADTH FIRST SEARCH
 
-![image](https://user-images.githubusercontent.com/98946604/209760567-862b32af-6b8d-45a2-aa3d-f01dc1c5d720.png)
+![image](https://user-images.githubusercontent.com/98946604/209763645-b3a51d2b-36d7-45b7-906f-c9e30c23304f.png)
+
 
 Breadth-First Search (BFS) is an algorithm used for traversing graphs or trees. 
 Traversing means visiting each node of the graph. 
@@ -32,7 +33,8 @@ Many times, a graph may contain two different disconnected parts and therefore t
 
 DEPTH FIRST SEARCH
 
-![image](https://user-images.githubusercontent.com/98946604/209760720-1a862c3f-7204-4728-bf1d-a59acd045c68.png)
+![image](https://user-images.githubusercontent.com/98946604/209763688-21455d58-5bcf-42b0-88b7-de33b6648087.png)
+
 
 The Depth-First Search is a recursive algorithm that uses the concept of backtracking. 
 It involves thorough searches of all the nodes by going ahead if potential, else by backtracking. 
